@@ -49,8 +49,8 @@ public class MainActivity extends ActionBarActivity {
 						@Override
 						public void onGlobalLayout() {
 							/**
-							 * 如果我们需要在这里因为某些需求需要设置content的高度；
-							 * 那么如果后续需要通过onNewIntent（）去
+							 * 如果我们需要在这里因为某些需求需要设置content的高度[比如我想播放一段动画，
+							 * 需要知晓内容的大小]； 那么如果后续需要通过onNewIntent（）去
 							 * 更新内容会导致content布局的高度不能动态更新了，不过似乎在
 							 * 更新之前我强制将布局的参数设置为WRAP_CONTENT
 							 * 就可以解决这个问题，不知道效果怎么样，明天去单位 在项目上再试一下。
